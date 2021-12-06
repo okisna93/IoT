@@ -3,10 +3,13 @@ import cv2
 import face_recognition
 import os
 from datetime import datetime
+from picamera import PiCamera
+import time
+from time import sleep
 import GPIO as GP
 import imutils
 from imutils.video import VideoStream
-from imutils.video import FPS
+# from imutils.video import FPS
 
 path='ImageAttandence'
 images=[]
@@ -43,12 +46,15 @@ def Attandance(name):
 encodeListKnown=findEncodings(images)
 print('Encoding Complete')
 
-VStream=VideoStream(srv=0).start()
+
 # cap=cv2.VideoCapture(0)
+camera=VideoStream(src=0).start()
+time.sleep(1)
 
 while True:
-    success,img=VStream.read()
-    imgS=cv2.resize(img,(0,0),None,0.25,0.25)
+    img=camera.read()
+    imgS=imutils.resize(img,(0,0),width=500)
+    # imgS=cv2.resize(img,(0,0),width=500)
     imgS=cv2.cvtColor(imgS,cv2.COLOR_BGR2RGB)
 
     facesCurFrame=face_recognition.face_locations(imgS)
@@ -71,7 +77,7 @@ while True:
             cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
             Attandance(name)
 
-            # Unlock the Door
+            Unlock the Door
             GP.GPIO_Unlock(18)
 
         else:
@@ -83,7 +89,7 @@ while True:
             cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 0, 255), -1)
             cv2.putText(img, name, (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
 
-            # Lock the Door
+            Lock the Door
             GP.GPIO_Lock(18)
 
 
