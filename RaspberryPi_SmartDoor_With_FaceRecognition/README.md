@@ -12,7 +12,9 @@ https://user-images.githubusercontent.com/69834549/144778746-ae8c734f-53ab-4af7-
 
 I wrote a script that can recognize faces that are in the ImageAttandence file. If I add any person's picture on that file, the person will be able to open the door.
 
-
-
 ![Detection-2](https://user-images.githubusercontent.com/69834549/144782726-c2eff5fc-ec34-47f4-9958-48f8fb08e27b.png)
 ![Detection-1](https://user-images.githubusercontent.com/69834549/144782730-51d0d9cb-19c7-4e4d-baee-f4c6ac89d520.png)
+
+# Third Step
+
+I merged the GPIO script and Face_Recognition script. When the system recognizes the face on the attendance file, the system unlocks the door.
