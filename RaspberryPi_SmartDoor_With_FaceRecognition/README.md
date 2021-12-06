@@ -4,3 +4,7 @@ In this project, I aim to open the door with a face recognition algorithm. I use
 
 ![BreadBoard_Lock_System1](https://user-images.githubusercontent.com/69834549/144778004-46528086-7e68-4e47-9d0e-a3f34e72e90d.png)
 
+
+https://user-images.githubusercontent.com/69834549/144778746-ae8c734f-53ab-4af7-bf3d-64126a80426e.mp4
+
+
