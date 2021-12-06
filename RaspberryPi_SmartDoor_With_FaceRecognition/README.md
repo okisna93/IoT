@@ -2,6 +2,17 @@
 
 In this project, I aim to open the door with a face recognition algorithm. I used a raspberry pi with a camera module. If the algorithm recognizes the face, the system automatically unlocks the door. If it can not recognize the face then the system keeps the door locked.
 
+Equipment List
+-----------------
+Raspberry Pi 4
+Breadboard and Jumper Wires
+T-Shape GPIO Extension Board
+40 pin Flat Ribbon Cable
+Raspberry Pi Camera Module, 5MP 1080P
+DC 12v 1.1A 11.4mm Elctromagnetic Solenoid Lock
+5V one Channel Relay Module
+DC 12V 2A Power Supply Adapter
+
 #  First Step
 
 I started the project by completing the curcuit. After that , I wrote an algorithm which can unlock the door by using GPIO pins.
