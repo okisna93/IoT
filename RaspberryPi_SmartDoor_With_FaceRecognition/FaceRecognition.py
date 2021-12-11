@@ -9,7 +9,7 @@ from time import sleep
 import GPIO as GP
 import imutils
 from imutils.video import VideoStream
-# from imutils.video import FPS
+
 
 path='ImageAttandence'
 images=[]
@@ -53,7 +53,7 @@ time.sleep(1)
 
 while True:
     img=camera.read()
-    imgS=imutils.resize(img,(0,0),width=500)
+    imgS=imutils.resize(img,width=500)
     # imgS=cv2.resize(img,(0,0),width=500)
     imgS=cv2.cvtColor(imgS,cv2.COLOR_BGR2RGB)
 
@@ -77,7 +77,7 @@ while True:
             cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
             Attandance(name)
 
-            Unlock the Door
+            #Unlock the Door
             GP.GPIO_Unlock(18)
 
         else:
@@ -89,7 +89,7 @@ while True:
             cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 0, 255), -1)
             cv2.putText(img, name, (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
 
-            Lock the Door
+            #Lock the Door
             GP.GPIO_Lock(18)
 
 
