@@ -23,7 +23,7 @@ $pip3 install os
 $sudo apt-get install rpi.gpio
 $pip install imutils
 ```
-### Clone the IoT on a Raspberry Pi
+### Clone the IoT Repository on a Raspberry Pi
 ```
 pi@raspberrypi:~ $ git clone https://github.com/okisna93/IoT.git
 ```
