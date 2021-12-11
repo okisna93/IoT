@@ -15,13 +15,13 @@ DC 12V 2A Power Supply Adapter
 
 Installing Necessary Libraries
 ---------------------------------
-$ pip3 install numpy
-$ pip3 install opencv-python
-$ pip3 install face-recognition
-$ pip3 install dlib
-$ pip3 install os
-$ sudo apt-get install rpi.gpio
-$ pip install imutils
+$pip3 install numpy
+$pip3 install opencv-python
+$pip3 install face-recognition
+$pip3 install dlib
+$pip3 install os
+$sudo apt-get install rpi.gpio
+$pip install imutils
 
 First Step
 -------------
