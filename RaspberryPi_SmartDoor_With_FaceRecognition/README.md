@@ -13,6 +13,16 @@ DC 12v 1.1A 11.4mm Elctromagnetic Solenoid Lock
 5V one Channel Relay Module
 DC 12V 2A Power Supply Adapter
 
+Installing Necessary Libraries
+---------------------------------
+$ pip3 install numpy
+$ pip3 install opencv-python
+$ pip3 install face-recognition
+$ pip3 install dlib
+$ pip3 install os
+$ sudo apt-get install rpi.gpio
+$ pip install imutils
+
 First Step
 -------------
 I started the project by completing the curcuit. After that , I wrote an algorithm which can unlock the door by using GPIO pins.
