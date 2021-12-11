@@ -5,12 +5,12 @@ In this project, I aim to open the door with a face recognition algorithm. I use
 ## List of Equipments
 * Raspberry Pi 4
 * Breadboard and Jumper Wires
-T-Shape GPIO Extension Board
-40 pin Flat Ribbon Cable
-Raspberry Pi Camera Module, 5MP 1080P
-DC 12v 1.1A 11.4mm Elctromagnetic Solenoid Lock
-5V one Channel Relay Module
-DC 12V 2A Power Supply Adapter
+* T-Shape GPIO Extension Board
+* 40 pin Flat Ribbon Cable
+* Raspberry Pi Camera Module, 5MP 1080P
+* DC 12v 1.1A 11.4mm Elctromagnetic Solenoid Lock
+* 5V one Channel Relay Module
+* DC 12V 2A Power Supply Adapter
 
 ## Installing Necessary Libraries
 ```
@@ -26,7 +26,11 @@ $pip install imutils
 ## First Step
 Build a circuit similar to the example picture.
 https://github.com/okisna93/IoT/blob/main/RaspberryPi_SmartDoor_With_FaceRecognition/BreadBoard_Lock_System1.png
-
+```
+$ # Copy the GPIO.py to another location and add the codes below to the end of the script test your circuit.
+$ GPIO_Unlock(18)   # I used GPIO18, you need to update the number if you use a different GPIO pin than GPIO18
+$ GPIO_Lock(18)
+```
 https://user-images.githubusercontent.com/69834549/144778746-ae8c734f-53ab-4af7-bf3d-64126a80426e.mp4
 
 ## Second Step
