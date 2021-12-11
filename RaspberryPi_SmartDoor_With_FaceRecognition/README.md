@@ -28,7 +28,7 @@ $pip install imutils
 First Step
 -------------
 You need to build the circut shown as on the picture.
-![spi.png]RaspberryPi_SmartDoor_With_FaceRecognition/BreadBoard_Lock_System1.png
+![spi.png]https://github.com/okisna93/IoT/blob/main/RaspberryPi_SmartDoor_With_FaceRecognition/BreadBoard_Lock_System1.png
 
 https://user-images.githubusercontent.com/69834549/144778746-ae8c734f-53ab-4af7-bf3d-64126a80426e.mp4
 
