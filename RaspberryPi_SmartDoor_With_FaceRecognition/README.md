@@ -27,7 +27,7 @@ $pip install imutils
 Build a circuit similar to the example picture.
 https://github.com/okisna93/IoT/blob/main/RaspberryPi_SmartDoor_With_FaceRecognition/BreadBoard_Lock_System1.png
 ```
-$ # Copy the GPIO.py to another location and add the codes below to the end of the script test your circuit.
+$ # Copy the GPIO.py to another location and add the codes below to the end of the script to test your circuit
 $ GPIO_Unlock(18)   # I used GPIO18, you need to update the number if you use a different GPIO pin than GPIO18
 $ GPIO_Lock(18)
 ```
