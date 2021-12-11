@@ -3,7 +3,6 @@
 In this project, I aim to open the door with a face recognition algorithm. I used a raspberry pi with a camera module. If the algorithm recognizes the face, the system automatically unlocks the door. If it can not recognize the face then the system keeps the door locked.
 
 ## List of Equipments
------------------
 Raspberry Pi 4
 Breadboard and Jumper Wires
 T-Shape GPIO Extension Board
@@ -14,7 +13,6 @@ DC 12v 1.1A 11.4mm Elctromagnetic Solenoid Lock
 DC 12V 2A Power Supply Adapter
 
 ## Installing Necessary Libraries
----------------------------------
 ```
 $pip3 install numpy
 $pip3 install opencv-python
@@ -26,21 +24,18 @@ $sudo apt-get install rpi.gpio
 $pip install imutils
 ```
 ## First Step
--------------
 Build a circuit similar to the example picture.
 https://github.com/okisna93/IoT/blob/main/RaspberryPi_SmartDoor_With_FaceRecognition/BreadBoard_Lock_System1.png
 
 https://user-images.githubusercontent.com/69834549/144778746-ae8c734f-53ab-4af7-bf3d-64126a80426e.mp4
 
-##Second Step
--------------
+## Second Step
 Add the JPEG format picture of the person inside the ImageAttandence file.
 
 ![Detection-2](https://user-images.githubusercontent.com/69834549/144782726-c2eff5fc-ec34-47f4-9958-48f8fb08e27b.png)
 ![Detection-1](https://user-images.githubusercontent.com/69834549/144782730-51d0d9cb-19c7-4e4d-baee-f4c6ac89d520.png)
 
 ## Third Step
------------------
 Run the FaceRecognition.py.
 The system will automatically unlock the door if it recognizes the person's picture which is in the ImageAttandence file. 
 Also, the script adds the person's name and the time inside the Attandance.csv when it unlocks the door.
