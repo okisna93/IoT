@@ -9,6 +9,7 @@ def GPIO_Unlock(n):
     while (True):
         GPIO.output(n, 1)
         sleep(1)
+        break
 
 def GPIO_Lock(n):
     GPIO.setwarnings(False)
@@ -17,3 +18,4 @@ def GPIO_Lock(n):
     while (True):
         GPIO.output(n, 0)
         sleep(1)
+        break
