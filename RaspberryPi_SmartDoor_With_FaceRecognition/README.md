@@ -48,3 +48,8 @@ Run the FaceRecognition.py.
 The system will automatically unlock the door if it recognizes the person's picture which is in the ImageAttandence file. 
 Also, the script adds the person's name and the time inside the Attandance.csv when it unlocks the door.
 I highly suggest you consider adding a fan on the raspberry pi.
+
+
+https://user-images.githubusercontent.com/69834549/145863410-dbfd78c4-fecb-4b48-bc10-cbf8f51e93e4.mp4
+
+
